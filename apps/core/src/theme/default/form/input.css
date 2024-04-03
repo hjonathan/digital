@@ -1,0 +1,60 @@
+.input,
+.input-sm,
+.input-md,z {
+    @apply px-3;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+    @apply shadow-md;
+    @apply hover:shadow-lg;
+    @apply focus:shadow-lg;
+    @apply transition;
+    @apply duration-200;
+    @apply cursor-pointer;
+
+    @apply border-gray-200;
+    @apply block;
+    @apply w-full;
+    @apply text-base;
+    @apply rounded-md;
+    /* @apply border-none; */
+
+    @apply placeholder-gray-400;
+    @apply text-gray-700;
+
+    @apply focus:!ring-primary-200;
+    @apply focus:!border-primary-200;
+    @apply active:!ring-primary-200;
+    @apply active:!border-primary-200;
+} 
+
+.input-md {
+    @apply h-11;
+}
+
+
+.input-sm {
+    height: 36px !important;
+}
+
+.input.xl {
+    @apply h-12;
+    @apply text-lg;
+    @apply font-bold;
+}
+
+.outlined {
+    @apply h-11;
+    @apply !shadow-none;
+    @apply !border-2;
+}
+
+/* PrimeVue components form border (blue) removal */
+.p-inputtext:enabled:focus,
+.input:focus {
+    @apply shadow-md;
+    @apply focus:shadow-xl;
+}
+
+.input:disabled {
+    @apply shadow-md;
+}

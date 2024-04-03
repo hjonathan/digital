@@ -1,0 +1,51 @@
+.select,
+.select-sm,
+.select-md {
+    @apply shadow-md;
+    @apply transition;
+    @apply duration-200;
+    @apply cursor-pointer;
+    @apply hover:shadow-lg;
+
+    @apply border-gray-200;
+    @apply block;
+    @apply w-full;
+    @apply text-base;
+    @apply sm:text-sm;
+    @apply rounded-md;
+
+    @apply placeholder-gray-500;
+    @apply text-gray-700;
+
+    @apply focus:ring-primary-500;
+    @apply focus:border-primary-200;
+    @apply active:border-primary-200;
+
+}
+
+.input-sm {
+    @apply h-10;
+}
+
+.input-md {
+    @apply h-11;
+}
+
+.select.xl {
+    @apply h-12;
+    @apply text-lg;
+    @apply font-bold;
+}
+
+/* PrimeVue: remove borders */
+.select,
+.select.xl {
+    &.p-dropdown:not(.p-disabled):hover {
+        border: none;
+    }
+    &.p-dropdown:not(.p-disabled).p-focus,
+    &.p-dropdown:not(.p-disabled):not(:focus) {
+        border: none;
+        box-shadow: none;
+    }
+}

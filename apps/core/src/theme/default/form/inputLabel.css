@@ -1,0 +1,8 @@
+.input-label-gutter {
+    @apply col-gutter-xs;
+}
+
+.input-label-error {
+    @apply text-red-500;
+    @apply !font-medium;
+}

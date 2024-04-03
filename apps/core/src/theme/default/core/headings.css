@@ -1,0 +1,41 @@
+/* Headings */
+h1, .h1 { 
+    @apply text-2xl;  
+    @apply mt-5;  
+    @apply mb-3; 
+    @apply capitalize; 
+    @apply font-semibold; 
+}
+h2, .h2 { 
+    @apply text-xl;  
+    @apply mt-4;  
+    @apply mb-2; 
+    @apply capitalize; 
+    @apply font-semibold; 
+}
+h3, .h3 { 
+    @apply text-lg;   
+    @apply mt-3;  
+    @apply mb-1; 
+    @apply font-semibold; 
+}
+h4, .h4 { 
+    @apply text-base;   
+    @apply mt-2;  
+    @apply mb-1; 
+    @apply font-semibold; 
+}
+h5, .h5 { 
+    @apply text-base; 
+    @apply mt-2;  
+    @apply mb-1;  
+    @apply font-black; 
+    @apply font-semibold; 
+}
+h6, .h6 { 
+    @apply text-sm;   
+    @apply mt-1;  
+    @apply mb-1;  
+    @apply font-black; 
+    @apply font-semibold; 
+}

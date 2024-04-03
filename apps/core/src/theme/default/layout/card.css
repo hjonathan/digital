@@ -1,0 +1,9 @@
+.card-action {
+    @apply border-2;
+    @apply border-primary-200;
+}
+
+.card-action-hover {
+    @apply hover:border-primary-600;
+    @apply hover:text-primary-600;
+}

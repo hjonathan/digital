@@ -1,0 +1,110 @@
+.no-space,
+.no-air,
+.air-none {
+    @apply my-0;
+    @apply lg:my-0;
+}
+
+/* 2xs */
+.space-xs,
+.air-xs {
+    @apply mt-1;
+    @apply lg:mt-2;
+}
+
+.space-both-xs,
+.air-both-xs {
+    @apply my-1;
+    @apply lg:my-2;
+}
+
+/* xs */
+.space-xs,
+.air-xs {
+    @apply mt-2;
+    @apply lg:mt-4;
+}
+
+.space-both-xs,
+.air-both-xs {
+    @apply my-2;
+    @apply lg:my-4;
+}
+
+/* sm */
+.space-sm,
+.air-sm {
+    @apply mt-3;
+    @apply lg:mt-6;
+}
+
+.space-both-sm,
+.air-both-sm {
+    @apply my-3;
+    @apply lg:my-6;
+}
+
+/* regular */
+.space,
+.air {
+    @apply mt-4;
+    @apply lg:mt-8;
+}
+
+.space-both,
+.air-both {
+    @apply my-4;
+    @apply lg:my-8;
+}
+
+/* xl */
+.space-xl,
+.air-xl {
+    @apply mt-7;
+    @apply lg:mt-10;
+}
+
+.space-both-xl,
+.air-both-xl {
+    @apply my-7;
+    @apply lg:my-10;
+}
+
+/* 2xl */
+.space-2xl,
+.air-2xl {
+    @apply mt-10;
+    @apply lg:mt-14;
+}
+
+.space-both-2xl,
+.air-both-2xl {
+    @apply my-10;
+    @apply lg:my-14;
+}
+
+/* 3xl */
+.space-3xl,
+.air-3xl {
+    @apply mt-14;
+    @apply lg:mt-20;
+}
+
+.space-both-3xl,
+.air-both-3xl {
+    @apply my-14;
+    @apply lg:my-20;
+}
+
+/* 4xl */
+.space-4xl,
+.air-4xl {
+    @apply mt-20;
+    @apply lg:mt-24;
+}
+
+.space-both-4xl,
+.air-both-4xl {
+    @apply my-20;
+    @apply lg:my-24;
+}

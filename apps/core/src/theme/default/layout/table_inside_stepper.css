@@ -1,0 +1,5 @@
+.table-inside-stepper {
+    @apply absolute;
+    @apply left-0;
+    @apply w-full;
+}

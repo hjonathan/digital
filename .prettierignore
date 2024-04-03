@@ -1,0 +1,17 @@
+.vscode/**/*.*
+node_modules/**/*.*
+.eslintignore
+.eslintrc.cjs
+.gitignore
+.prettierrc.json
+.lerna.json
+package.json
+package-lock.json
+*.md
+apps/**/*.json
+apps/**/*.css
+apps/**/*.html
+apps/**/*.md
+apps/**/*.gitignore
+apps/**/package.json
+apps/**/vite.config.js

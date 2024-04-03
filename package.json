@@ -1,0 +1,33 @@
+{
+    "name": "root",
+    "private": true,
+    "version": "0.0.100",
+    "workspaces": [
+        "apps/*",
+        "packages/*",
+        "ui/*",
+        "libs/*"
+    ],
+    "scripts": {
+        "dev": "cd apps/core/ && vite",
+        "build": "cd apps/core/ && vite build",
+        "preview": "cd apps/core/ && vite preview",
+        "format": "eslint --ext .js,.vue  --fix ./apps && prettier apps  --write --ignore-path .prettierignore "
+    },
+    "devDependencies": {
+        "cypress": "^13.6.4",
+        "eslint": "^8.36.0",
+        "eslint-config-semistandard": "^17.0.0",
+        "eslint-config-standard": "^17.0.0",
+        "eslint-plugin-cypress": "^2.15.1",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-n": "^15.6.1",
+        "eslint-plugin-promise": "^6.1.1",
+        "eslint-plugin-vue": "^9.9.0",
+        "lerna": "^6.5.1",
+        "prettier": "2.8.4"
+    },
+    "dependencies": {
+        "echarts": "^5.4.3"
+    }
+}

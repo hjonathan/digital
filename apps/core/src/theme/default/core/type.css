@@ -1,0 +1,39 @@
+/* Drophead, deck or subtitle */
+.drophead,
+.deck,
+.subtitle { @apply text-xl font-bold; }
+
+/* Paragraphs */
+.lead { @apply mb-2 font-bold; }
+p { 
+    @apply mt-2; 
+    @apply leading-relaxed; 
+}
+
+/* Blockquote */
+blockquote
+.blockquote {
+    @apply mb-2;
+
+    > :last-child {
+        @apply mb-0;
+    }
+}
+
+/* Type size utilities */
+.large { @apply text-xl; }
+.small { @apply text-sm; }
+
+/* Type weight */
+.bold {
+    @apply font-bold;
+}
+
+/* PrimeVue components font size */
+.p-component, .p-component * {
+    @apply text-base sm:text-sm;
+}
+
+.xl.p-component {
+    @apply text-lg;
+}

@@ -1,0 +1,95 @@
+.row {
+    @apply grid grid-cols-12;
+    @apply col-gutter-md;
+    @apply !w-full;
+}
+
+.row > * {
+    @apply col-span-12;
+}
+
+/* Default values */
+.col-gutter-xs { @apply !gap-1; }
+.col-gutter-md { @apply gap-6; }
+.col-gutter-xl { @apply !gap-10; }
+
+/* Space column */
+.gutter-xs { @apply !space-y-1; }
+.gutter-md { @apply space-y-6; }
+.gutter-xl { @apply !space-y-9; }
+
+/* For 2 columns */
+.row.cols-2 {
+    @apply grid grid-cols-2;
+    @apply col-gutter-md;
+}
+
+.row.cols-2 > * {
+    @apply col-span-2;
+    @apply sm:col-span-1;
+    @apply gutter-md;
+}
+
+.row.cols-3 {
+    @apply grid grid-cols-3;
+    @apply col-gutter-md;
+}
+
+/* For 3 columns */
+.row.cols-3 > * {
+    @apply col-span-3;
+    @apply sm:col-span-1;
+    @apply gutter-md;
+}
+
+.row.cols-3 > .col-2\/3 {
+    @apply sm:col-span-2;
+}
+
+/* For 4 columns */
+.row.cols-4 {
+    @apply grid grid-cols-4;
+    @apply col-gutter-md;
+}
+
+.row.cols-4 > * {
+    @apply col-span-4;
+    @apply col-span-1;
+    @apply gutter-md;
+}
+
+.row.cols-4 > .col-2\/4 {
+    @apply sm:col-span-2;
+}
+
+.row.cols-4 > .col-3\/4 {
+    @apply sm:col-span-3;
+}
+
+/* For 6 columns */
+.row.cols-6 {
+    @apply grid grid-cols-6;
+    @apply col-gutter-md;
+}
+
+.row.cols-6 > * {
+    @apply col-span-6;
+    @apply sm:col-span-1;
+    @apply gutter-md;
+}
+
+.row.cols-6 > .col-2\/6 {
+    @apply sm:col-span-2;
+}
+
+.row.cols-6 > .col-3\/6 {
+    @apply sm:col-span-3;
+}
+
+.row.cols-6 > .col-4\/6 {
+    @apply sm:col-span-4;
+}
+
+.row.cols-6 > .col-5\/6 {
+    @apply sm:col-span-5;
+}

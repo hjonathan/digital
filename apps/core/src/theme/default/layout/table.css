@@ -1,0 +1,35 @@
+table:not(.custom) {
+    @apply min-w-full;
+    @apply w-full;
+
+    thead {
+        @apply text-sm;
+        @apply bg-gray-100;
+        @apply border-b;
+        @apply border-t;
+        @apply border-b-gray-300;
+        @apply border-t-gray-200;
+
+        tr {
+            th {
+                @apply py-3;
+                @apply font-semibold;
+                @apply text-start;
+            }
+        }
+    }
+
+    tbody {
+        @apply bg-white;
+
+        tr {
+            @apply border-b;
+            @apply border-gray-200;
+            @apply text-sm;
+
+            td {
+                @apply py-2;
+            }
+        }
+    }
+}

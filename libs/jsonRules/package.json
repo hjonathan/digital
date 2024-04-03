@@ -1,0 +1,10 @@
+{
+  "name": "jsonRules",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "index.js",
+  "devDependencies": {
+    "lodash": "^4.17.21"
+  }
+}

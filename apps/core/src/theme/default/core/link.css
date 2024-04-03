@@ -1,0 +1,106 @@
+.link {
+    @apply cursor-pointer;
+    @apply text-gray-600;
+    @apply text-left;
+    @apply disabled:opacity-50;
+    @apply underline;
+    @apply hover:no-underline;
+
+    /* Table link */
+    &.table {
+        @apply w-full;
+        @apply pl-2;
+        @apply relative;
+        @apply -left-2;
+        @apply h-9;
+
+        .hover {
+            @apply underline;
+        }
+    }
+
+    &.without-underline {
+        @apply no-underline;
+        @apply hover:underline;
+    }
+
+    &.gray {
+        @apply text-gray-400;
+        @apply hover:text-gray-500;
+    }
+
+    /* Hover icon */
+    .icon {
+        @apply invisible;
+        @apply ml-2;
+        @apply h-6;
+        @apply w-6;
+        @apply rounded-full;
+        @apply inline-flex;
+        @apply items-center;
+        @apply justify-center;
+        @apply text-gray-400;
+        @apply bg-gray-100;
+        @apply absolute;
+        @apply top-1;
+    }
+
+    &:hover {
+        .icon {
+            @apply visible;
+        }
+    }
+
+    /* Colors and hover combinations */
+    &.primary,
+    &.hover\:primary:hover,
+    &.edit,
+    &.hover\:edit:hover {
+        @apply text-primary-600;
+    }
+
+    &.secondary,
+    &.hover\:secondary:hover,
+    &.clone,
+    &.hover\:clone:hover {
+        @apply text-secondary-600;
+    }
+
+    &.success,
+    &.hover\:success:hover {
+        @apply text-success-600;
+    }
+
+    &.warning,
+    &.hover\:warning:hover {
+        @apply text-warning-600;
+    }
+
+    &.delete,
+    &.hover\:delete:hover,
+    &.error,
+    &.hover\:error:hover,
+    &.danger,
+    &.hover\:danger:hover,
+    &.cancel,
+    &.hover\:cancel:hover {
+        @apply text-error-500;
+    }
+
+    &.info,
+    &.hover\:info:hover {
+        @apply text-info-600;
+    }
+
+    &.excel,
+    &.hover\:excel:hover {
+        @apply text-green-600;
+    }
+
+    &.print,
+    &.hover\:print:hover,
+    &.pdf,
+    &.hover\:pdf:hover {
+        @apply text-red-500;
+    }
+}

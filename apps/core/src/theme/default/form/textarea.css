@@ -1,0 +1,39 @@
+.textarea,
+.textarea-sm {
+    @apply h-24;
+
+    @apply bg-white;
+    @apply p-3;
+    @apply shadow-md;
+    @apply transition;
+    @apply duration-200;
+    @apply cursor-pointer;
+    @apply hover:shadow-lg;
+
+    @apply border-gray-200;
+    @apply block;
+    @apply w-full;
+    @apply rounded-md;
+
+    @apply placeholder-gray-400;
+    @apply text-gray-700;
+
+    @apply focus:ring-primary-200;
+    @apply focus:border-primary-200;
+}
+
+.textarea-sm {
+    @apply  h-20;
+    @apply  min-h-full;
+}
+
+.textarea.xl {
+    @apply h-44;
+    @apply text-lg;
+    @apply font-bold;
+}
+
+.textarea:disabled {
+    @apply shadow-none;
+    @apply bg-gray-300;
+}

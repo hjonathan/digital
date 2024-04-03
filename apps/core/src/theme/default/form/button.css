@@ -1,0 +1,387 @@
+.button {
+    @apply shadows;
+
+    @apply inline-flex;
+    @apply items-center;
+    @apply px-6;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    @apply border;
+    @apply border-transparent;
+    @apply font-medium;
+    @apply rounded-md;
+
+    @apply border-neutral-200;
+    @apply text-gray-600;
+    @apply bg-white;
+
+    @apply disabled:opacity-50;
+
+    /* Menu buttons */
+    &.menu {
+        @apply px-3;
+        @apply rounded-l-none;
+    }
+
+    /* Circular button */
+    &.circle,
+    &.circular {
+        @apply rounded-full;
+        @apply px-2;
+    }
+
+    /* Colors and hover combinations */
+    &.transparent,
+    &.hover\:transparent:hover {
+        @apply bg-transparent;
+        @apply border-gray-200;
+        @apply shadow-none;
+
+        &.outline,
+        &.hover\:outline:hover {
+            @apply border-gray-100;
+        }
+
+        &.hover\:no-outline:hover {
+            @apply bg-transparent;
+            @apply border-neutral-200;
+        }
+    }
+
+    &.white,
+    &.hover\:white:hover {
+        @apply bg-white;
+        @apply shadow-none;
+        @apply hover:shadow-none;
+
+        &.outline,
+        &.hover\:outline:hover {
+            @apply border-gray-100;
+        }
+
+        &.hover\:no-outline:hover {
+            @apply border-gray-100;
+        }
+    }
+
+    &.default,
+    &.hover\:default:hover {
+        @apply text-gray-600;
+        @apply bg-white;
+    }
+
+    &.primary,
+    &.hover\:primary:hover,
+    &.edit,
+    &.hover\:edit:hover {
+        @apply bg-primary-600;
+        @apply text-white;
+
+        &.flat,
+        &.hover\:flat:hover {
+            @apply text-primary-600;
+            @apply bg-transparent;
+            @apply shadow-none;
+            @apply border-none;
+        }
+
+        &.outline,
+        &.hover\:outline:hover {
+            @apply text-primary-600;
+            @apply border-primary-600;
+            @apply outline-none;
+            @apply bg-white;
+        }
+
+        &.hover\:no-outline:hover {
+            @apply bg-primary-600;
+            @apply text-white;
+            @apply border-neutral-200;
+        }
+    }
+
+    &.orange,
+    &.hover\:orange:hover,
+    &.edit,
+    &.hover\:edit:hover {
+        @apply bg-orange-600;
+        @apply text-white;
+
+        &.flat,
+        &.hover\:flat:hover {
+            @apply text-orange-600;
+            @apply bg-transparent;
+            @apply shadow-none;
+            @apply border-none;
+        }
+
+        &.outline,
+        &.hover\:outline:hover {
+            @apply text-orange-600;
+            @apply border-orange-600;
+            @apply outline-none;
+            @apply bg-white;
+        }
+
+        &.hover\:no-outline:hover {
+            @apply bg-orange-600;
+            @apply text-white;
+            @apply border-neutral-200;
+        }
+    }
+
+    &.secondary,
+    &.hover\:secondary:hover,
+    &.clone,
+    &.hover\:clone:hover {
+        @apply bg-secondary-600;
+        @apply text-white;
+
+        &.flat,
+        &.hover\:flat:hover {
+            @apply text-secondary-600;
+            @apply bg-transparent;
+            @apply shadow-none;
+            @apply border-none;
+        }
+
+        &.outline,
+        &.hover\:outline:hover {
+            @apply text-secondary-600;
+            @apply border-secondary-600;
+            @apply outline-none;
+            @apply bg-white;
+        }
+
+        &.hover\:no-outline:hover {
+            @apply bg-secondary-600;
+            @apply text-white;
+            @apply border-neutral-200;
+        }
+    }
+
+    &.success,
+    &.hover\:success:hover {
+        @apply bg-success-600;
+        @apply text-white;
+
+        &.flat,
+        &.hover\:flat:hover {
+            @apply text-success-600;
+            @apply bg-transparent;
+            @apply shadow-none;
+            @apply border-none;
+        }
+
+        &.outline,
+        &.hover\:outline:hover {
+            @apply text-success-600;
+            @apply border-success-600;
+            @apply outline-none;
+            @apply bg-white;
+        }
+
+        &.hover\:no-outline:hover {
+            @apply bg-success-600;
+            @apply text-white;
+            @apply border-neutral-200;
+        }
+    }
+
+    &.warning,
+    &.hover\:warning:hover {
+        @apply bg-warning-600;
+        @apply text-white;
+
+        &.flat,
+        &.hover\:flat:hover {
+            @apply text-warning-600;
+            @apply bg-transparent;
+            @apply shadow-none;
+            @apply border-none;
+        }
+
+        &.outline,
+        &.hover\:outline:hover {
+            @apply text-warning-600;
+            @apply border-warning-600;
+            @apply outline-none;
+            @apply bg-white;
+        }
+
+        &.hover\:no-outline:hover {
+            @apply bg-warning-600;
+            @apply text-white;
+            @apply border-neutral-200;
+        }
+    }
+
+    &.delete,
+    &.hover\:delete:hover,
+    &.error,
+    &.hover\:error:hover,
+    &.danger,
+    &.hover\:danger:hover,
+    &.cancel,
+    &.hover\:cancel:hover {
+        @apply bg-error-500;
+        @apply text-white;
+
+        &.flat,
+        &.hover\:flat:hover {
+            @apply text-error-600;
+            @apply bg-transparent;
+            @apply shadow-none;
+            @apply border-none;
+        }
+
+        &.outline,
+        &.hover\:outline:hover {
+            @apply text-error-500;
+            @apply border-error-500;
+            @apply outline-none;
+            @apply bg-white;
+        }
+
+        &.hover\:no-outline:hover {
+            @apply bg-error-500;
+            @apply text-white;
+            @apply border-neutral-200;
+        }
+    }
+
+    &.info,
+    &.hover\:info:hover {
+        @apply bg-info-600;
+        @apply text-white;
+
+        &.flat,
+        &.hover\:flat:hover {
+            @apply text-info-600;
+            @apply bg-transparent;
+            @apply shadow-none;
+            @apply border-none;
+        }
+
+        &.outline,
+        &.hover\:outline:hover {
+            @apply text-info-500;
+            @apply border-info-500;
+            @apply outline-none;
+            @apply bg-white;
+        }
+
+        &.hover\:no-outline:hover {
+            @apply bg-info-600;
+            @apply text-white;
+            @apply border-neutral-200;
+        }
+    }
+
+    &.excel,
+    &.hover\:excel:hover {
+        @apply bg-green-600;
+        @apply text-white;
+
+        &.flat,
+        &.hover\:flat:hover {
+            @apply text-green-600;
+            @apply border-green-600;
+            @apply bg-transparent;
+        }
+
+        &.outline,
+        &.hover\:outline:hover {
+            @apply text-green-600;
+            @apply border-green-600;
+            @apply outline-none;
+            @apply bg-white;
+        }
+
+        &.hover\:no-outline:hover {
+            @apply bg-green-600;
+            @apply text-white;
+            @apply border-neutral-200;
+        }
+    }
+
+    &.print,
+    &.hover\:print:hover,
+    &.pdf,
+    &.hover\:pdf:hover {
+        @apply bg-red-500;
+        @apply text-white;
+
+        &.flat,
+        &.hover\:flat:hover {
+            @apply text-red-500;
+            @apply border-red-500;
+            @apply bg-transparent;
+        }
+
+        &.outline,
+        &.hover\:outline:hover {
+            @apply text-red-500;
+            @apply border-red-500;
+            @apply outline-none;
+            @apply bg-white;
+        }
+
+        &.hover\:no-outline:hover {
+            @apply bg-red-500;
+            @apply text-white;
+            @apply border-neutral-200;
+        }
+    }
+
+    &.neutral,
+    &.hover\:neutral:hover,
+    &.gray,
+    &.hover\:gray:hover {
+        @apply bg-zinc-400;
+        @apply text-white;
+
+        &.flat,
+        &.hover\:flat:hover {
+            @apply text-zinc-400;
+            @apply bg-transparent;
+            @apply shadow-none;
+            @apply border-none;
+        }
+
+        &.outline,
+        &.hover\:outline:hover {
+            @apply text-zinc-400;
+            @apply border-zinc-400;
+            @apply outline-none;
+            @apply bg-white;
+        }
+
+        &.hover\:no-outline:hover {
+            @apply bg-zinc-400;
+            @apply text-white;
+            @apply border-neutral-200;
+        }
+    }
+
+    &.dark-gray,
+    &.hover\:dark-gray:hover {
+        @apply bg-gray-200;
+
+        &.outline,
+        &.hover\:outline:hover {
+            @apply border-gray-400;
+            @apply bg-white;
+        }
+
+        &.hover\:no-outline:hover {
+            @apply bg-gray-400;
+            @apply border-neutral-200;
+        }
+    }
+}
+
+/* Tree table expander button (circular arrow) */
+.p-treetable-toggler:enabled:hover {
+    background: white !important;
+}

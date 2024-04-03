@@ -1,0 +1,25 @@
+.tabs {
+    .tab {
+        @apply whitespace-nowrap;
+        @apply py-4;
+        @apply px-1;
+        @apply border-b-2;
+        @apply font-medium;
+        @apply text-sm;
+        @apply hover:no-underline;
+        @apply cursor-pointer;
+
+        @apply border-transparent;
+        @apply text-gray-500;
+        @apply hover:text-gray-700;
+        @apply hover:border-gray-300;
+        @apply hover:no-underline;
+        @apply no-underline;
+
+        &.active {
+            @apply border-primary-500;
+            @apply text-primary-600;
+            @apply cursor-default;
+        }
+    }
+}

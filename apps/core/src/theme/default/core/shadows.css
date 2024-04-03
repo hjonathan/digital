@@ -1,0 +1,7 @@
+.shadows {
+    @apply shadow-md;
+    @apply transition;
+    @apply duration-200;
+    @apply cursor-pointer;
+    @apply hover:shadow-xl;
+}

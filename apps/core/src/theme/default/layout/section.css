@@ -1,0 +1,47 @@
+section,
+.container {
+    @apply mx-auto;
+    @apply px-4;
+    @apply py-3;
+    @apply lg:px-6;
+    @apply lg:py-4;
+    @apply !space-y-6;
+
+
+    > section {
+        @apply mx-0;
+        @apply px-0;
+        @apply space-y-3;
+
+        section {
+            @apply mx-0;
+            @apply px-0;
+            @apply space-y-3;
+
+            @apply py-0;
+            @apply lg:py-0;
+        }
+    }
+
+    &.full {
+        @apply px-0;
+    }
+
+    &.half {
+        @apply md:w-3/5;
+        @apply xl:w-1/2;
+        @apply m-auto;
+    }
+
+    &.paper-sm {
+        @apply max-w-4xl;
+        @apply bg-white;
+    }
+
+    &.paper {
+        @apply max-w-8xl;
+        @apply px-8;
+        @apply py-6;
+        @apply bg-white;
+    }
+}

@@ -1,0 +1,5 @@
+.grid {
+    @apply !mt-0;
+    @apply !pt-0;
+    /* @apply gap-8; */
+}

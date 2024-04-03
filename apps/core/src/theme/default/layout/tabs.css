@@ -1,0 +1,67 @@
+nav.tabs {
+    @apply flex;
+    @apply select-none;
+    @apply border-b;
+    @apply overflow-y-hidden;
+
+    &.main-tabs {
+        @apply divide-x;
+        @apply divide-gray-200;
+    }
+
+    &.secondary-tabs {
+        @apply space-x-3;
+        @apply bg-white;
+        padding: 5px 0;
+        @apply px-5;
+
+        a {
+            @apply bg-gray-100;
+            @apply rounded-md;
+            @apply px-5;
+            @apply py-2;
+            @apply text-sm;
+            @apply whitespace-nowrap;
+        }
+    }
+
+    a {
+        @apply flex;
+        @apply gap-3;
+        @apply items-center;
+        @apply whitespace-nowrap;
+        @apply py-3;
+        @apply px-7;
+        @apply transition-all;
+        @apply cursor-pointer;
+        @apply text-gray-500;
+        @apply bg-white;
+
+        &:hover,
+        &.active {
+            @apply text-white;
+            @apply bg-primary-500;
+            @apply border-primary-700;
+        }
+    }
+
+    .home-icon {
+        @apply h-6;
+        @apply w-6;
+    }
+
+    .close-icon {
+        @apply -ml-2;
+        @apply w-4;
+        @apply h-4;
+        @apply text-gray-500;
+        @apply bg-white;
+        @apply rounded-full;
+        @apply transition-all;
+
+        &:hover {
+            @apply text-white;
+            @apply bg-error-400;
+        }
+    }
+}
